@@ -292,6 +292,7 @@ button {
   position: absolute;
   bottom: -12px;
   right: 0;
+  z-index: 1000;
 }
 
 .button-scroll span {
@@ -308,14 +309,16 @@ button {
 
 .button-scroll .btn:after {
   position: absolute;
-  top: 0;
+  margin: auto;
   left: 0;
+  right: 2px;
+  top: 0;
+  bottom: 0;
+  text-align: center;
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin-top: 14px;
-  margin-left: 11px;
   border-bottom: 4px solid white;
   border-left: 4px solid white;
   border-right: 0;
@@ -452,7 +455,7 @@ button {
   }
 
   .offcanvas {
-    min-width: 800px;
+    min-width: 44.444rem;
   }
 }
 
@@ -468,11 +471,11 @@ button {
   }
 
   .main-fonVidio img {
-    max-width: 480px;
+    max-width: 26.666rem;
   }
 
   .offcanvas {
-    min-width: 600px;
+    min-width: 33.333rem;
   }
 }
 
@@ -486,11 +489,26 @@ button {
   }
 
   .main {
-    height: calc(100vh - 360px);
+    height: calc(100vh - 20rem);
   }
 }
 
 @media (max-width: 992px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .wrapper {
+    overflow-y: scroll;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .main {
+    height: 100%;
+    min-height: 30.555rem;
+  }
+
   .button-scroll {
     bottom: -54px;
     right: 0;
@@ -505,32 +523,44 @@ button {
   .button-scroll .btn::after {
     width: 12px;
     height: 12px;
-    margin-top: 7px;
-    margin-left: 10px;
+    bottom: 5px;
+    right: 0px;
     border-bottom: 3px solid white;
     border-left: 3px solid white;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
+
+  .running-line {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 992px) and (max-height: 620px) {
+  .button-scroll {
+    bottom: -42px;
+  }
+}
+
+@media (max-width: 992px) and (max-height: 420px) {
+  .main-fonVidio img {
+    max-width: 24.666rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    line-height: 40.8px;
+  }
+}
+
+@media (max-width: 992px) and (min-height: 420px) {
+  .main-fonVidio img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-y: scroll;
-  }
-
-  .wrapper {
-    overflow-y: scroll;
-    height: 100%;
-    min-height: 100vh;
-  }
-
-  .main {
-    height: 100%;
-    min-height: 550px;
-  }
-
   .container.container-mobile {
     padding: 0;
   }
@@ -606,10 +636,6 @@ button {
     display: block;
     border-top: 1px solid var(--default);
     border-bottom: 1px solid var(--default);
-  }
-
-  .running-line {
-    margin-top: 100px;
   }
 
   .title {
@@ -722,5 +748,120 @@ button {
 
   .time {
     font-size: 1rem;
+  }
+}
+
+@media (max-height: 620px) {
+  .main-fonVidio img {
+    max-width: 16.166rem;
+    min-width: 0px;
+  }
+
+  .desc {
+    bottom: 18px;
+    font-size: 1rem;
+    line-height: 19.6px;
+  }
+
+  .main {
+    height: calc(100vh - 16rem);
+  }
+
+  .title {
+    max-width: 440px;
+    font-size: 2.255rem;
+    line-height: 41.8px;
+  }
+
+  .title-right {
+    top: 62px;
+  }
+
+  .title-left {
+    top: 19px;
+  }
+
+  .button-scroll {
+    bottom: 0;
+  }
+}
+
+@media (max-height: 690px) {
+  .main-fonVidio img {
+    max-width: 20.666rem;
+  }
+
+  .main {
+    height: calc(100vh - 17rem);
+  }
+}
+
+@media (max-height: 600px) {
+  .main-fonVidio img {
+    max-width: 13.666rem;
+  }
+}
+
+@media (max-height: 546px) {
+  .main-fonVidio img {
+    max-width: 10.666rem;
+  }
+}
+
+@media (max-height: 470px) {
+  .main-fonVidio img {
+    max-width: 9.666rem;
+  }
+
+  .desc {
+    bottom: -6px;
+    font-size: 0.6rem;
+    line-height: 11.6px;
+  }
+
+  .title {
+    max-width: 240px;
+    font-size: 1.2rem;
+    line-height: 19.8px;
+  }
+
+  .title-right {
+    top: 15px;
+  }
+
+  .button-scroll {
+    bottom: -17px;
+    font-size: 0.6rem;
+    line-height: 11.6px;
+  }
+
+  .button-scroll span {
+    font-size: 0.488rem;
+  }
+
+  .button-scroll .btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .button-scroll .btn:after {
+    width: 13px;
+    height: 13px;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+  }
+}
+
+@media (max-height: 420px) {
+  .main-fonVidio img {
+    max-width: 6.666rem;
+  }
+
+  .desc {
+    bottom: 3px;
+  }
+
+  .button-scroll {
+    bottom: -6px;
   }
 }
