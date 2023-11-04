@@ -15,7 +15,8 @@ body {
 
 a,
 .btn,
-button {
+button,
+.offcanvas-body .nav-item:hover {
   color: inherit;
   text-decoration: none;
   -webkit-transition: all 0.25s ease;
@@ -227,8 +228,8 @@ section {
 .offcanvas-body::after {
   content: "";
   display: inline-block;
-  width: 632px;
-  height: 632px;
+  width: 360px;
+  height: 246px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -260,7 +261,6 @@ section {
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  cursor: url("../img/svg/cursor-hover.svg"), auto;
 }
 
 .offcanvas-body .nav-item:hover::before {
@@ -536,6 +536,14 @@ section {
   font-family: Wadik, sans-serif;
   font-size: 18px;
   overflow: hidden;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 #second-section ul {
@@ -549,18 +557,60 @@ section {
 #second-section ul li {
   padding: 24px 30px 24px 90px;
   color: var(--bs-danger);
+  -webkit-transform: translateX(-150%);
+      -ms-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+#second-section ul li:nth-child(1) {
+  -webkit-animation: ani 2s forwards;
+          animation: ani 2s forwards;
 }
 
 #second-section ul li:nth-child(2) {
   width: 88%;
+  -webkit-animation: ani 4.3s forwards;
+          animation: ani 4.3s forwards;
 }
 
 #second-section ul li:nth-child(3) {
   width: 76%;
+  -webkit-animation: ani 5.9s forwards;
+          animation: ani 5.9s forwards;
 }
 
 #second-section ul li:nth-child(4) {
   width: 64%;
+  -webkit-animation: ani 6.7s forwards;
+          animation: ani 6.7s forwards;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .image-second {
