@@ -1,5 +1,6 @@
 html {
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,6 +79,34 @@ img {
   --default: #d1d1d1;
   --secondary: #3f3f3f;
   --bs-success: #4DC158;
+  --scrollbarBg: rgba(255, 255, 255, 0.8);
+  --scrollbarThumb: #ECECEC;
+  --scrollbarWidth: 5px;
+  --scrollbarHeight: 5px;
+  --scrollbarBorder: 3px solid transparent;
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+}
+
+.wrapper {
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+  height: var(--scrollbarHeight);
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBg);
+  border-radius: var(--scrollbarBorderRadius);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarThumb);
+  border-radius: var(--scrollbarBorderRadius);
+  border: var(--scrollbarBorder);
 }
 
 .dropdown-item.active,
@@ -133,6 +162,24 @@ img {
 .wrapper {
   height: 100vh;
   overflow: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+section {
+  min-width: 100vw;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo-text {
@@ -362,7 +409,9 @@ img {
 }
 
 .running-line {
+  width: 100%;
   line-height: 1;
+  overflow: hidden;
   z-index: 10;
 }
 
@@ -483,6 +532,44 @@ img {
   color: #6d6d6d;
 }
 
+#second-section {
+  font-family: Wadik, sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+#second-section ul {
+  top: 0;
+  right: 0;
+  margin-right: 10%;
+  max-width: 700px;
+  width: 100%;
+}
+
+#second-section ul li {
+  padding: 24px 30px 24px 90px;
+  color: var(--bs-danger);
+}
+
+#second-section ul li:nth-child(2) {
+  width: 88%;
+}
+
+#second-section ul li:nth-child(3) {
+  width: 76%;
+}
+
+#second-section ul li:nth-child(4) {
+  width: 64%;
+}
+
+.image-second {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
 @media (min-width: 2560px) {
   .container {
     max-width: 1800px;
@@ -496,6 +583,12 @@ img {
 @media (max-width: 1920px) {
   .offcanvas {
     min-width: 33.333rem;
+  }
+}
+
+@media (max-width: 1560px) {
+  #second-section ul {
+    margin-right: 0;
   }
 }
 
@@ -518,6 +611,31 @@ img {
     overflow-y: scroll;
     height: 100%;
     min-height: 100vh;
+  }
+
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #second-section {
+    overflow-x: hidden;
+    min-height: 77vh;
+  }
+
+  #second-section ul {
+    top: 168px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100%;
+  }
+
+  #second-section ul li {
+    padding: 10px;
+    margin: 0 auto;
+    width: 95% !important;
   }
 
   .button-scroll {
@@ -545,6 +663,7 @@ img {
 
   .running-line {
     margin-top: 100px;
+    border-bottom: 1px solid var(--default);
   }
 
   .offcanvas-body {
@@ -720,8 +839,16 @@ img {
 
   .logo,
   .offcanvas-title .logo img {
-    width: 70.77px;
+    width: 62.77px;
     height: 18px;
+  }
+
+  #second-section {
+    min-height: 100vh;
+  }
+
+  .navbar-menu {
+    padding-bottom: 0.25rem;
   }
 }
 
@@ -743,6 +870,10 @@ img {
 @media (max-width: 320px) {
   .navbar-toggler {
     margin-right: 1px !important;
+  }
+
+  #second-section {
+    min-height: 114vh;
   }
 }
 
