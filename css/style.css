@@ -82,7 +82,7 @@ img {
   --bs-success: #4DC158;
   --scrollbarBg: rgba(255, 255, 255, 0.8);
   --scrollbarThumb: #ECECEC;
-  --scrollbarWidth: 5px;
+  --scrollbarWidth: 0px;
   --scrollbarHeight: 5px;
   --scrollbarBorder: 3px solid transparent;
   --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
@@ -171,16 +171,6 @@ main {
 
 section {
   min-width: 100vw;
-  min-height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo-text {
@@ -207,6 +197,23 @@ section {
 .offcanvas-title img {
   width: 125.81px;
   height: 32px;
+}
+
+.slider-main {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-main .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar-toggler-icon {
@@ -335,9 +342,6 @@ section {
 .main-fonVidio .img-vidio {
   width: 95%;
   height: 95%;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  opacity: 0.8;
 }
 
 .title {
@@ -549,7 +553,6 @@ section {
 #second-section ul {
   top: 0;
   right: 0;
-  margin-right: 10%;
   max-width: 700px;
   width: 100%;
 }
@@ -585,8 +588,65 @@ section {
           animation: ani 6.7s forwards;
 }
 
-.reveal {
-  opacity: 0;
+#third-section {
+  min-height: 100%;
+  font-family: Wadik, sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+#third-section .container {
+  position: relative;
+  height: 100%;
+}
+
+#third-section .title {
+  position: static;
+  max-width: 100%;
+  z-index: 30;
+}
+
+#third-section .title .progress {
+  height: 2px;
+}
+
+#third-section .title .progress.text-bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+#third-section .section-img {
+  position: absolute;
+  top: -19px;
+  right: 9%;
+  z-index: 10;
+  -webkit-box-shadow: 0 5px 28px #212529;
+          box-shadow: 0 5px 28px #212529;
+}
+
+#third-section .section-img img {
+  height: 100%;
+}
+
+#third-section .swiper.numbered-slider {
+  width: 100%;
+  height: 100%;
+  max-height: 366px;
+}
+
+#third-section .swiper-slide {
+  max-width: 400px;
+  height: 366px;
+  font-size: 18px;
+}
+
+#third-section .swiper-slide .slider-title {
+  font-size: calc(28px + 1.875vw);
+  color: var(--secondary);
+}
+
+#third-section .swiper-slide .slider-desc {
+  width: 340px;
+  color: white;
 }
 
 @-webkit-keyframes ani {
@@ -655,6 +715,7 @@ section {
 @media (max-width: 992px) {
   body {
     overflow-y: scroll;
+    height: 100%;
   }
 
   .wrapper {
@@ -663,11 +724,16 @@ section {
     min-height: 100vh;
   }
 
-  main {
+  .slider-main {
+    overflow-y: scroll;
+  }
+
+  .slider-main > .swiper-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
 
   #second-section {
@@ -686,6 +752,16 @@ section {
     padding: 10px;
     margin: 0 auto;
     width: 95% !important;
+  }
+
+  #third-section .section-img {
+    text-align: center;
+    position: static;
+    top: -57px;
+  }
+
+  #third-section .section-img img {
+    max-width: 375px;
   }
 
   .button-scroll {
@@ -743,6 +819,14 @@ section {
     height: 50px;
     line-height: 50px;
   }
+
+  .swiper-wrapper {
+    height: calc(100vh - 88px);
+  }
+
+  .main {
+    height: calc(100vh - 14.2rem);
+  }
 }
 
 @media (max-width: 800px) {
@@ -798,7 +882,8 @@ section {
     border-bottom: 1px solid var(--default);
   }
 
-  .title {
+  .title,
+  .slider-title {
     max-width: 290px;
     font-size: calc(28px + 61.2 * (100vw - 320px) / 1920);
   }
@@ -859,6 +944,10 @@ section {
 
   .title-left {
     top: 28px;
+  }
+
+  .main {
+    height: calc(100vh - 13.2rem);
   }
 
   .main-fonVidio {
@@ -924,6 +1013,10 @@ section {
 
   #second-section {
     min-height: 114vh;
+  }
+
+  #third-section .swiper-slide .slider-desc {
+    width: 292px;
   }
 }
 
