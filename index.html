@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <title>ТЗ</title>
     <link rel="shortcut icon" href="img/favicon.webp">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231105212932">
-    <link href="libs/bootstrap/bootstrap.min.css?_v=20231105212932" rel="stylesheet" media="all">
-    <link href="libs/bootstrap/bootstrap-select.min.css?_v=20231105212932" rel="stylesheet" media="all">
-    <link href="css/style.min.css?_v=20231105212932" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231108104727">
+    <link href="libs/bootstrap/bootstrap.min.css?_v=20231108104727" rel="stylesheet" media="all">
+    <link href="libs/bootstrap/bootstrap-select.min.css?_v=20231108104727" rel="stylesheet" media="all">
+    <link href="css/style.min.css?_v=20231108104727" rel="stylesheet" media="all">
   </head>
   <body> 
     <div class="wrapper d-flex flex-column">
@@ -64,15 +64,15 @@
           </div>
         </div>
       </header>
-      <main class="swiper slider-main">
-        <div class="swiper-wrapper">
+      <main class="slider-main">
+        <div class="swiper-wrapper wrapper-main">
           <div class="swiper-slide"> 
             <section class="d-flex flex-column h-100" id="first-section">
               <div class="container">
                 <div class="main position-relative"> 
                   <div class="main-fonVidio position-absolute top-50 start-50 translate-middle"><picture><source srcset="img/map-default-2.webp" type="image/webp"><img class="img-map position-relative" src="img/map-default-2.png" alt="map"></picture>
                     <video class="img-vidio object-fit-none position-absolute top-50 start-50 translate-middle" playsinline muted loop autoplay>
-                      <source src="libs/output-pipes.mp4" type="video/mp4">
+                      <source src="libs/video/output-pipes.mp4" type="video/mp4">
                     </video>
                   </div>
                   <div class="title title-left text-danger">stainless steel </div>
@@ -270,25 +270,18 @@
             </section>
           </div>
           <div class="swiper-slide"> 
-            <section class="text-bg-dark" id="third-section">
+            <section class="text-bg-dark align-items-start pt-lg-5" id="third-section">
               <div class="container">
-                <div class="d-lg-flex mt-5 my-5 pt-5 d-none">
-                  <div class="title text-danger">we'll tell you
-                    <div class="progress text-bg-secondary mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar text-bg-danger" style="width: 25%"></div>
-                    </div>
-                  </div>
+                <div class="d-lg-flex mb-3 pt-md-0 pt-5 d-none">
+                  <div class="title text-danger">we'll tell you</div>
                 </div>
                 <div class="section-img"><picture><source srcset="img/section-3/content-1.webp" type="image/webp"><img src="img/section-3/content-1.png" alt=""></picture></div>
-                <div class="d-lg-none d-flex mt-5 my-5">
-                  <div class="title text-danger">we'll tell you
-                    <div class="progress text-bg-secondary mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar text-bg-danger" style="width: 25%"></div>
-                    </div>
-                  </div>
+                <div class="d-lg-none d-flex my-5">
+                  <div class="title text-danger">we'll tell you</div>
                 </div>
                 <div class="swiper slider-numbered d-flex gap-4">
-                  <div class="swiper-wrapper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper pt-5">
                     <div class="swiper-slide flex-column align-items-start justify-content-start"> 
                       <h2 class="slider-title">01</h2>
                       <div class="slider-desc">The size of the dealer price and why such prices cannot be found on the Internet</div>
@@ -316,6 +309,199 @@
                     <div class="swiper-slide flex-column align-items-start justify-content-start"> 
                       <h2 class="slider-title">07</h2>
                       <div class="slider-desc">what are closed dealer sales</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide"> 
+            <section class="text-bg-dark align-items-start pt-5" id="fourth-section">
+              <div class="container">
+                <div class="inner-container">
+                  <div class="d-flex align-items-end justify-content-between pb-4">
+                    <div class="title text-danger">We work with pipes</div>
+                    <div class="block-right"><a href="">download catalogue</a></div>
+                  </div>
+                  <div class="slider d-flex justify-conten-center pb-lg-0 pb-5">
+                    <div class="swiper slider-left" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide flex-column">
+                          <div class="slider-img"><picture><source srcset="img/pipes/01.webp" type="image/webp"><img src="img/pipes/01.png" alt=""></picture></div>
+                          <div class="slider-desc">stainless steel welded pipes</div>
+                        </div>
+                        <div class="swiper-slide flex-column">
+                          <div class="slider-img"><picture><source srcset="img/pipes/02.webp" type="image/webp"><img src="img/pipes/02.png" alt=""></picture></div>
+                          <div class="slider-desc">stainless steel square / rectangular pipes</div>
+                        </div>
+                        <div class="swiper-slide flex-column">
+                          <div class="slider-img"><picture><source srcset="img/pipes/03.webp" type="image/webp"><img src="img/pipes/03.png" alt=""></picture></div>
+                          <div class="slider-desc">stainless steel seamless pipes</div>
+                        </div>
+                        <div class="swiper-slide flex-column"> 
+                          <div class="slider-img"><picture><source srcset="img/pipes/04.webp" type="image/webp"><img src="img/pipes/04.png" alt=""></picture></div>
+                          <div class="slider-desc">stainless steel perforated tubes</div>
+                        </div>
+                        <div class="swiper-slide flex-column">
+                          <div class="slider-img"><picture><source srcset="img/pipes/05.webp" type="image/webp"><img src="img/pipes/05.png" alt=""></picture></div>
+                          <div class="slider-desc">stainless steel slot tubes</div>
+                        </div>
+                        <div class="swiper-slide flex-column">
+                          <div class="slider-img"><picture><source srcset="img/pipes/06.webp" type="image/webp"><img src="img/pipes/06.png" alt=""></picture></div>
+                          <div class="slider-desc">stainless steel decorative tubes for shower cabins</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper slider-right">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide flex-column align-items-start justify-content-start"> 
+                          <div class="d-flex justify-content-between align-items-start p-md-3 p-0"> 
+                            <div class="content row">
+                              <div class="col-6"> 
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Diameter</p>
+                                  <div class="row">
+                                    <div class="col check">6.0 – 375 Mm </div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Pipe length</p>
+                                  <div class="row"> 
+                                    <div class="col-6 check pe-0">4000 Mm</div>
+                                    <div class="col-6 check pe-0">6000 Mm</div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Surface</p>
+                                  <div class="row">
+                                    <div class="col-6 check pe-0">GRIT 320 <span>(ground)</span></div>
+                                    <div class="col-6 check pe-0">2B</div>
+                                  </div>
+                                  <div class="row"> 
+                                    <div class="col-6 check pe-0">GRIT 600 <span>(polished)</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Wall thickness</p>
+                                  <div class="row"> 
+                                    <div class="col check pe-0">0.5 – 4 Mm </div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">steel standard</p>
+                                  <div class="row">
+                                    <div class="col-6 check pe-0">AISI 201</div>
+                                    <div class="col-6 check pe-0">AISI 304</div>
+                                    <div class="col-6 check pe-0">AISI 321</div>
+                                    <div class="col-6 check pe-0">AISI 316L</div>
+                                    <div class="col-6 check pe-0">AISI 430</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide flex-column align-items-start justify-content-start"> 
+                          <div class="d-flex justify-content-between align-items-start p-md-3 p-0"> 
+                            <div class="content row">
+                              <div class="col-12"> 
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">stainless steel square / rectangular pipes</p>
+                                  <div class="row">
+                                    <div class="col check">aSTM 554 </div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Pipe length</p>
+                                  <div class="row"> 
+                                    <div class="col check">MT304, MT304L, MT316L, MT430, Grade 201, 202 as per Mill's STD</div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Square tubes diameter</p>
+                                  <div class="row">
+                                    <div class="col check pe-0">12.7x12.7 – 150x150 Mm</div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Rectangular tubes diameter</p>
+                                  <div class="row"> 
+                                    <div class="col check pe-0">10x20 – 100x200 Mm </div>
+                                  </div>
+                                </div>
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">Wall thickness</p>
+                                  <div class="row">
+                                    <div class="col check pe-0">0.7 – 6.5 Mm</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide flex-column align-items-start justify-content-start"> 
+                          <div class="d-flex justify-content-between align-items-start p-md-3 p-0"> 
+                            <div class="content row">
+                              <div class="col-12"> 
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">stainless steel seamless pipes</p>
+                                  <div class="row">
+                                    <div class="col-6 check pe-0">ASTM A312 </div>
+                                    <div class="col-6 check pe-0">GOST 9941</div>
+                                    <div class="col-12 check">Wall thicknesses from 0.5 up to 68 mm</div>
+                                    <div class="col-12 check pe-0">Outer diameters is from 6 up to 914 mm for seamless pipe (0.24 up to 36 inches)</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide flex-column align-items-start justify-content-start"> 
+                          <div class="d-flex justify-content-between align-items-start p-md-3 p-0"> 
+                            <div class="content row">
+                              <div class="col-12"> 
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">stainless steel perforated tubes</p>
+                                  <div class="row">
+                                    <div class="col check pe-0">Any groove depth and width is possible on customer request </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide flex-column align-items-start justify-content-start"> 
+                          <div class="d-flex justify-content-between align-items-start p-md-3 p-0"> 
+                            <div class="content row">
+                              <div class="col-12"> 
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">stainless steel decorative tubes for shower cabins</p>
+                                  <div class="row">
+                                    <div class="col-12 check pe-0">Super polish, We guaranty highest quality of the surface, standart sizes </div>
+                                    <div class="col-12 check pe-0">can customize Your size surface types: Black matt, Black Titanium, Gold, Bronze, Mirror 800 Grit, Brushed 320 Grit etc.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide flex-column align-items-start justify-content-start"> 
+                          <div class="d-flex justify-content-between align-items-start p-md-3 p-0"> 
+                            <div class="content row">
+                              <div class="col-12"> 
+                                <div class="col mb-2">
+                                  <p class="text-default mb-0">stainless steel slot tubes</p>
+                                  <div class="row">
+                                    <div class="col-12 check pe-0">Any groove depth and width is possible on customer request  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -444,11 +630,14 @@
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20231105212932"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231105212932"></script>
-      <script src="libs/bootstrap/bootstrap.bundle.min.js?_v=20231105212932"></script>
-      <script src="libs/bootstrap/bootstrap-select.min.js?_v=20231105212932"></script>
-      <script src="js/app.min.js?_v=20231105212932"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20231108104727"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231108104727"></script>
+      <script src="libs/gsap/gsap.min.js?_v=20231108104727"></script>
+      <script src="libs/gsap/ScrollSmoother.min.js?_v=20231108104727"></script>
+      <script src="libs/gsap/ScrollTrigger.min.js?_v=20231108104727"></script>
+      <script src="libs/bootstrap/bootstrap.bundle.min.js?_v=20231108104727"></script>
+      <script src="libs/bootstrap/bootstrap-select.min.js?_v=20231108104727"></script>
+      <script src="js/app.min.js?_v=20231108104727"></script>
     </div>
   </body>
 </html>
