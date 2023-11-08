@@ -49,6 +49,12 @@ img {
   color: #6d6d6d;
 }
 
+.text-accent {
+  font-family: Wadik;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 @font-face {
   font-family: Aneliza;
   font-display: swap;
@@ -177,6 +183,7 @@ img {
 
 section {
   width: 100vw;
+  height: calc(100vh - 31.8rem);
 }
 
 .logo-text {
@@ -339,8 +346,6 @@ section {
   height: auto;
   max-width: 584px;
   font-family: Wadik, sans-serif;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
 }
 
 .main-fonVidio img {
@@ -642,8 +647,18 @@ section {
 #third-section .swiper.slider-numbered {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-height: 300px;
+}
+
+#third-section .swiper-button-next,
+#third-section .swiper-button-prev {
+  color: var(--bs-danger);
+  background-color: rgba(39, 38, 38, 0.5098039216);
+}
+
+#third-section .swiper-button-next::after,
+#third-section .swiper-button-prev::after {
+  padding: 20px;
 }
 
 #third-section .swiper-slide {
@@ -666,7 +681,7 @@ section {
 }
 
 #third-section .swiper-slide .slider-desc {
-  width: 340px;
+  max-width: 340px;
   color: white;
 }
 
@@ -841,6 +856,85 @@ section {
           transform: rotate(136deg);
 }
 
+#fifth-section .title {
+  position: static;
+  width: 1000px;
+  max-width: 100%;
+  font-family: Wadik, sans-serif;
+  line-height: 1;
+}
+
+#fifth-section .circle-block {
+  position: absolute;
+  top: -150px;
+  right: 10px;
+  padding-bottom: 2.3rem;
+  height: 340px;
+  width: 340px;
+}
+
+#fifth-section .circle-block p {
+  width: 145px;
+  font-family: Wadik;
+  line-height: 1.5;
+}
+
+#fifth-section .circle-block a {
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#fifth-section .circle-block a:hover {
+  text-decoration: underline;
+}
+
+#fifth-section .circle-block a span {
+  font-weight: 700;
+  font-size: calc(20px + 0.2083333333vw);
+  text-transform: uppercase;
+}
+
+.more-text {
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.more-text:hover {
+  text-decoration: none;
+}
+
+.chart-block {
+  position: relative;
+  height: 300px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.chart-block img {
+  height: 300px;
+  max-height: 100%;
+}
+
+#circle-button {
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#circle-button:hover {
+  background: var(--bs-danger);
+  color: white;
+}
+
+.subscribe {
+  color: var(--bs-danger);
+}
+
 @media (min-width: 2560px) {
   .container {
     max-width: 1800px;
@@ -876,8 +970,18 @@ section {
     font-size: 1rem;
   }
 
-  .main-fonVidio {
-    max-width: 556px;
+  #fifth-section .circle-block {
+    top: -175px;
+  }
+
+  #fifth-section .circle-block {
+    top: -195px;
+    padding-bottom: 1.6rem;
+  }
+
+  #fifth-section .circle-block p {
+    line-height: 1.2;
+    margin-bottom: 10px;
   }
 }
 
@@ -888,6 +992,14 @@ section {
 
   .inner-container {
     padding: 4px 5px;
+  }
+
+  .main-fonVidio {
+    max-width: 480px;
+  }
+
+  #fifth-section .title {
+    width: 770px;
   }
 }
 
@@ -939,6 +1051,11 @@ section {
     padding: 10px;
     margin: 0 auto;
     width: 95% !important;
+  }
+
+  #third-section,
+  #fourth-section {
+    height: 100%;
   }
 
   #third-section .swiper-wrapper {
@@ -1040,6 +1157,10 @@ section {
     padding: 6px;
     height: 100%;
     overflow-y: clip;
+  }
+
+  #fifth-section .title {
+    font-size: 18px;
   }
 }
 
@@ -1225,6 +1346,11 @@ section {
     height: 100%;
     min-height: 104px;
   }
+
+  #fifth-section .circle-block {
+    width: 260px;
+    height: 260px;
+  }
 }
 
 @media (max-width: 378px) {
@@ -1265,9 +1391,51 @@ section {
   }
 }
 
-@media (max-height: 772px) {
+@media (max-height: 770px) {
   .inner-container {
     overflow-y: scroll;
+    height: 100%;
+  }
+
+  #fourth-section .slider .swiper {
+    max-height: 375px;
+  }
+
+  #fourth-section .slider .swiper.slider-left .swiper-slide .slider-desc {
+    font-size: calc(14px + 0.2083333333vw);
+  }
+
+  .main-fonVidio {
+    max-width: 450px;
+  }
+
+  .times {
+    height: 55px;
+    line-height: 55px;
+  }
+
+  .title {
+    font-size: calc(21px + 1.875vw);
+  }
+
+  .desc {
+    font-size: calc(13px + 0.5208333333vw);
+  }
+
+  .circle-block span {
+    font-size: calc(20px + 6.8 * (100vw - 320px) / 1920);
+  }
+
+  .btn.dropdown-toggle {
+    line-height: 2;
+  }
+
+  .footer-social {
+    height: 60px;
+  }
+
+  .footer-social .btn {
+    line-height: 60px;
   }
 }
 
