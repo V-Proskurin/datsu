@@ -920,19 +920,19 @@ section {
   max-height: 100%;
 }
 
-#circle-button {
+.circle-button {
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
 }
 
-#circle-button:hover {
+.circle-button:hover {
   background: var(--bs-danger);
   color: white;
 }
 
-.subscribe {
-  color: var(--bs-danger);
+.circle-button span {
+  text-transform: uppercase;
 }
 
 @media (min-width: 2560px) {
@@ -1159,6 +1159,10 @@ section {
     overflow-y: clip;
   }
 
+  #fifth-section {
+    height: 100vh;
+  }
+
   #fifth-section .title {
     font-size: 18px;
   }
@@ -1369,6 +1373,10 @@ section {
 
   #fourth-section .slider .swiper.slider-left .swiper-slide .slider-img {
     height: 77px;
+  }
+
+  #third-section .swiper-slide {
+    font-size: 16px;
   }
 }
 
