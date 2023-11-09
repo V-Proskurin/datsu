@@ -222,6 +222,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .slider-main section {
@@ -272,6 +273,11 @@ section {
   border-radius: 100%;
   z-index: 0;
   height: 541px;
+}
+
+.offcanvas.offcanvas-main::after {
+  right: -264px;
+  bottom: -336px;
 }
 
 .offcanvas-body {
@@ -1034,10 +1040,6 @@ section {
     margin-bottom: 10px;
   }
 
-  .footer .offcanvas {
-    min-width: 100%;
-  }
-
   .footer .offcanvas-body {
     overflow-y: scroll;
   }
@@ -1302,6 +1304,10 @@ section {
 
   html {
     font-size: 16px;
+  }
+
+  .offcanvas {
+    min-width: 100%;
   }
 
   .time {
