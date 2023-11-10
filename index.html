@@ -7,10 +7,9 @@
     <meta name="description" content="">
     <title>ТЗ</title>
     <link rel="shortcut icon" href="img/favicon.webp">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231109234548">
-    <link href="libs/bootstrap/bootstrap.min.css?_v=20231109234548" rel="stylesheet" media="all">
-    <link href="libs/bootstrap/bootstrap-select.min.css?_v=20231109234548" rel="stylesheet" media="all">
-    <link href="css/style.min.css?_v=20231109234548" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231110153424">
+    <link href="libs/bootstrap/bootstrap.min.css?_v=20231110153424" rel="stylesheet" media="all">
+    <link href="css/style.min.css?_v=20231110153424" rel="stylesheet" media="all">
   </head>
   <body> 
     <div class="wrapper d-flex flex-column">
@@ -53,18 +52,18 @@
       <main class="slider-main">
         <div class="swiper-wrapper wrapper-main">
           <div class="swiper-slide element-animation">
-            <section class="d-flex flex-column h-100" id="first-section">
+            <section class="d-flex flex-column h-100 pt-xxl-5 pt-3" id="first-section">
               <div class="container">
-                <div class="main position-relative"> 
+                <div class="main position-relative pt-lg-0 pt-3"> 
                   <div class="main-fonVidio position-absolute top-50 start-50 translate-middle"><picture><source srcset="img/map-default-2.webp" type="image/webp"><img class="img-map position-relative" src="img/map-default-2.png" alt="map"></picture>
                     <video class="img-vidio object-fit-none position-absolute top-50 start-50 translate-middle" playsinline muted loop autoplay>
                       <source src="libs/video/output-pipes.mp4" type="video/mp4">
                     </video>
                   </div>
-                  <div class="title title-left text-danger">stainless steel </div>
+                  <div class="title title-left text-danger top-lg-0">stainless steel </div>
                   <div class="title title-right text-danger">pipes</div>
                   <div class="desc">Best world prices <br>container sales only <br>Exclusive price directly from factories   </div>
-                  <div class="button-scroll"> <span class="d-lg-inline-block d-none pe-2">scroll</span><span class="d-lg-none d-inline-block pe-2">scroll to eplore</span>
+                  <div class="button-scroll"> <span class="d-lg-inline-block d-none pe-2">scroll</span><a class="d-lg-none d-inline-block pe-2" href="#second-section">scroll to eplore</a>
                     <div class="btn btn-danger rounded-circle p-2"></div>
                   </div>
                 </div>
@@ -256,13 +255,13 @@
             </section>
           </div>
           <div class="swiper-slide element-animation"> 
-            <section class="text-bg-dark align-items-start pt-lg-5" id="third-section">
+            <section class="text-bg-dark align-items-start pt-xxl-5 pt-3" id="third-section">
               <div class="container">
                 <div class="d-lg-flex mb-3 pt-md-0 pt-5 d-none">
                   <div class="title text-danger">we'll tell you</div>
                 </div>
                 <div class="section-img"><picture><source srcset="img/section-3/content-1.webp" type="image/webp"><img src="img/section-3/content-1.png" alt=""></picture></div>
-                <div class="d-lg-none d-flex my-5">
+                <div class="d-lg-none d-flex my-3">
                   <div class="title text-danger">we'll tell you</div>
                 </div>
                 <div class="swiper slider-numbered d-flex gap-4">
@@ -304,10 +303,10 @@
             </section>
           </div>
           <div class="swiper-slide element-animation"> 
-            <section class="text-bg-dark align-items-start pt-5" id="fourth-section">
+            <section class="text-bg-dark align-items-start pt-xxl-5 pt-3" id="fourth-section">
               <div class="container">
                 <div class="inner-container">
-                  <div class="d-flex align-items-end justify-content-between pb-4">
+                  <div class="d-flex align-items-end justify-content-between pb-xxl-4 pb-3">
                     <div class="title text-danger">We work with pipes</div>
                     <div class="block-right"><a href="">download catalogue</a></div>
                   </div>
@@ -497,9 +496,9 @@
             </section>
           </div>
           <div class="swiper-slide element-animation"> 
-            <section id="fifth-section">
+            <section class="pt-xxl-5 pt-3" id="fifth-section">
               <div class="container position-relative h-100">
-                <div class="d-lg-flex mb-3 pt-5">
+                <div class="d-lg-flex pb-xxl-4 pb-3">
                   <div class="title text-danger">News and market trends for buyers</div>
                   <div class="circle-block rounded-circle border-danger border d-lg-flex d-none flex-column justify-content-end align-items-center z-1">
                     <p class="text-accent">we'll stay in touch</p><a class="rounded-0 text-danger" href="" role="button">
@@ -543,8 +542,7 @@
                           <div class="col-5"> <span class="text-accent">&#36;1234</span><span class="text-success text-accent"> +0.5% </span></div>
                         </div>
                       </li>
-                      <li class="list-group-item">
-                        <div class="more-text text-danger py-4">More pipes forecast</div>
+                      <li class="list-group-item"><a class="more-text text-danger py-4" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы">More pipes forecast</a>
                         <div class="d-lg-none d-flex justify-content-center"> 
                           <div class="circle-block rounded-circle border-danger border d-flex flex-column justify-content-center align-items-center z-1 position-static" id="circle-button">
                             <p class="text-accent">we'll stay in touch</p><a class="rounded-0 subscribe" href="" role="button"> 
@@ -560,28 +558,28 @@
                     <div class="chart-block collapse multi-collapse show" id="collapseWidthExample1">
                       <div class="card card-body border-0"><picture><source srcset="img/diagrama.webp" type="image/webp"><img src="img/diagrama.png" alt=""></picture>
                         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
-                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button">get a current price</a>
+                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы">get a current price</a>
                         </div>
                       </div>
                     </div>
                     <div class="chart-block collapse multi-collapse" id="collapseWidthExample2">
                       <div class="card card-body border-0"><picture><source srcset="img/diagrama.webp" type="image/webp"><img src="img/diagrama.png" alt=""></picture>
                         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
-                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button">get a current price</a>
+                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы">get a current price</a>
                         </div>
                       </div>
                     </div>
                     <div class="chart-block collapse multi-collapse" id="collapseWidthExample3">
                       <div class="card card-body border-0"><picture><source srcset="img/diagrama.webp" type="image/webp"><img src="img/diagrama.png" alt=""></picture>
                         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
-                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button">get a current price</a>
+                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы">get a current price</a>
                         </div>
                       </div>
                     </div>
                     <div class="chart-block collapse multi-collapse" id="collapseWidthExample4">
                       <div class="card card-body border-0"><picture><source srcset="img/diagrama.webp" type="image/webp"><img src="img/diagrama.png" alt=""></picture>
                         <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
-                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button">get a current price</a>
+                          <div class="text-accent pb-3 px-4">Find out the current price directly from the manufacturers' factories right now</div><a class="btn btn-outline-danger btn-soc border-start border-end border-1 rounded-0 active" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы">get a current price</a>
                         </div>
                       </div>
                     </div>
@@ -642,8 +640,7 @@
                           <div class="text-accent">Price chart with forecast for 2024</div><picture><source srcset="img/diagrama-mobile.webp" type="image/webp"><img src="img/diagrama-mobile.png" alt=""></picture>
                         </div>
                       </div>
-                      <li class="list-group-item">
-                        <div class="more-text text-danger py-4">More pipes forecast</div>
+                      <li class="list-group-item"><a class="more-text text-danger py-4" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы">More pipes forecast</a>
                         <div class="d-flex justify-content-center"> 
                           <div class="circle-button circle-block rounded-circle border-danger border d-flex flex-column justify-content-center align-items-center position-static">
                             <p class="text-accent">we'll stay in touch</p>
@@ -675,7 +672,7 @@
               <div class="footer-text border-top border-dafault d-lg-none d-flex justify-content-center align-items-center order-1">
                 <p class="p-3 text-center mb-0">We will tell you about the conditions for country leaders during personal communication</p>
               </div>
-              <div class="buttons order-lg-0 order-md-1 order-1"><a class="btn btn-soc btn-outline-danger border-start border-1 rounded-0" href="" role="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы"> 
+              <div class="buttons order-lg-0 order-md-1 order-1"><a class="btn btn-soc btn-outline-danger border-start border-1 rounded-0" href="" role="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvasReqForm" aria-controls="offcanvasReqFormLabel" aria-expanded="false" aria-label="Вывод формы"> 
                   <svg class="me-2" width="19" height="20" viewBox="0 0 19 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.72353 7.43497C6.40586 8.85612 7.33601 10.1881 8.51398 11.3661C9.69196 12.544 11.0239 13.4742 12.4451 14.1565C12.5673 14.2152 12.6284 14.2445 12.7058 14.2671C12.9806 14.3472 13.3181 14.2897 13.5509 14.123C13.6164 14.0761 13.6724 14.0201 13.7845 13.908C14.1272 13.5652 14.2986 13.3939 14.4709 13.2818C15.1208 12.8593 15.9586 12.8593 16.6084 13.2818C16.7808 13.3939 16.9521 13.5652 17.2949 13.908L17.4859 14.099C18.0069 14.62 18.2674 14.8805 18.4089 15.1603C18.6904 15.7167 18.6904 16.3738 18.4089 16.9302C18.2674 17.21 18.0069 17.4705 17.4859 17.9915L17.3314 18.146C16.8122 18.6653 16.5525 18.9249 16.1996 19.1232C15.8079 19.3432 15.1996 19.5014 14.7504 19.5C14.3456 19.4988 14.0689 19.4203 13.5155 19.2632C10.5417 18.4192 7.73558 16.8266 5.39451 14.4855C3.05343 12.1445 1.46087 9.33832 0.616808 6.36451C0.459748 5.81115 0.381217 5.53447 0.380013 5.12963C0.378676 4.68041 0.536869 4.07211 0.756881 3.68045C0.955156 3.32749 1.21477 3.06788 1.73399 2.54866L1.88852 2.39412C2.40953 1.87312 2.67003 1.61262 2.9498 1.47111C3.50622 1.18967 4.16332 1.18967 4.71973 1.47111C4.9995 1.61262 5.26 1.87312 5.78101 2.39412L5.97205 2.58516C6.31479 2.9279 6.48616 3.09927 6.5982 3.2716C7.02073 3.92147 7.02073 4.75926 6.5982 5.40913C6.48616 5.58146 6.31479 5.75282 5.97205 6.09556C5.85998 6.20763 5.80395 6.26366 5.75705 6.32916C5.59038 6.56193 5.53283 6.89943 5.61295 7.17427C5.63549 7.25161 5.66484 7.31273 5.72353 7.43497Z" fill="currentColor"></path>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1821 0.5C12.6019 0.5 12.9421 0.840264 12.9421 1.26L12.9421 4.7899L17.0094 0.7226C17.3062 0.425802 17.7874 0.425802 18.0842 0.7226C18.381 1.0194 18.381 1.5006 18.0842 1.7974L14.0169 5.86471L17.5468 5.86471C17.9666 5.86471 18.3068 6.20497 18.3068 6.62471C18.3068 7.04444 17.9666 7.38471 17.5468 7.38471H13.1305C12.187 7.38471 11.4221 6.61985 11.4221 5.67635L11.4221 1.26C11.4221 0.840263 11.7624 0.5 12.1821 0.5Z" fill="currentColor"></path>
@@ -691,7 +688,7 @@
                     <path d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z"></path>
                   </svg><span>weChat</span></a></div><span class="footer-text text-body-secondary order-lg-1 order-md-0 order-0">Terms of use</span>
             </div>
-            <div class="offcanvas offcanvas-start text-bg-danger" id="offcanvasReqForm" aria-labelledby="offcanvasReqFormLabel">
+            <div class="offcanvas offcanvas-start offcanvasReqForm text-bg-danger" aria-labelledby="offcanvasReqFormLabel">
               <div class="offcanvas-header justify-content-start p-md-3 p-0 px-2">
                 <button class="btn-close btn-close-white fs-5 fs-md-3 me-2" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 <div class="offcanvas-title me-3"><a class="logo" href="#"><img src="img/logo-toggle.svg" alt="logo"></a></div>
@@ -816,10 +813,10 @@
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20231109234548"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231109234548"></script>
-      <script src="libs/bootstrap/bootstrap.bundle.min.js?_v=20231109234548"></script>
-      <script src="js/app.min.js?_v=20231109234548"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20231110153424"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231110153424"></script>
+      <script src="libs/bootstrap/bootstrap.bundle.min.js?_v=20231110153424"></script>
+      <script src="js/app.min.js?_v=20231110153424"></script>
     </div>
   </body>
 </html>
