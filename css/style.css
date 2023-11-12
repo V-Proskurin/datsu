@@ -1369,6 +1369,10 @@ section {
     bottom: -30px;
   }
 
+  .running-line {
+    margin-top: 48px;
+  }
+
   .logo,
   .offcanvas-title .logo img {
     width: 62.77px;
