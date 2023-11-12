@@ -1335,7 +1335,7 @@ section {
   }
 
   .main {
-    height: calc(100vh - 14.2rem);
+    height: calc(100vh - 16.2rem);
   }
 
   .main-fonVidio {
@@ -1361,8 +1361,8 @@ section {
 
   .desc {
     overflow: hidden;
-    height: 30px;
-    line-height: 1.1;
+    height: 34px;
+    line-height: 1.2;
   }
 
   .button-scroll {
