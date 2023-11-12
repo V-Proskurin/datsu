@@ -1309,7 +1309,7 @@ section {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 432px) {
   .container {
     padding: 0 15px;
   }
