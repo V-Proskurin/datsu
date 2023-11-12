@@ -1361,8 +1361,9 @@ section {
 
   .desc {
     overflow: hidden;
-    height: 34px;
+    height: 39px;
     line-height: 1.2;
+    font-size: 18px;
   }
 
   .button-scroll {
