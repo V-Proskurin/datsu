@@ -16,7 +16,8 @@ body {
 a,
 .btn,
 button,
-.offcanvas-body .nav-item:hover {
+.offcanvas-body .nav-item:hover,
+.offcanvas-header .btn-close {
   color: inherit;
   text-decoration: none;
   -webkit-transition: all 0.25s ease;
@@ -332,6 +333,22 @@ section {
 
 .times .time {
   font-family: Wadik, sans-serif;
+}
+
+.times .time span {
+  color: var(--bs-danger);
+}
+
+.times .time.time-mobile {
+  font-family: Wadik, sans-serif;
+}
+
+.times .time.time-mobile span {
+  color: white;
+}
+
+.offcanvas-header .btn-close {
+  cursor: url("../img/svg/cursor-hover.svg"), auto !important;
 }
 
 .offcanvas-backdrop {
