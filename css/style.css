@@ -316,8 +316,8 @@ input:-webkit-autofill:active {
 }
 
 .times {
-  height: 88px;
-  line-height: 88px;
+  height: 55px;
+  line-height: 55px;
   border-left: 2px solid var(--default);
 }
 
@@ -399,6 +399,10 @@ input:-webkit-autofill:active {
 .footer-social .footer-text {
   font-weight: 400;
   font-size: 14px;
+}
+
+#first-section {
+  height: 100%;
 }
 
 .main {
@@ -1115,6 +1119,10 @@ input:-webkit-autofill:active {
         flex-wrap: wrap;
   }
 
+  #first-section {
+    height: 100vh;
+  }
+
   #second-section {
     overflow-x: hidden;
     min-height: 77vh;
@@ -1343,7 +1351,7 @@ input:-webkit-autofill:active {
   }
 
   .main {
-    height: calc(100vh - 18.2rem);
+    height: calc(100vh - 14.2rem);
   }
 
   .main-fonVidio {
