@@ -1387,7 +1387,7 @@ input:-webkit-autofill:active {
   }
 
   .running-line {
-    margin-top: 48px;
+    margin-top: 0;
   }
 
   .logo,
@@ -1496,17 +1496,12 @@ input:-webkit-autofill:active {
     max-width: 450px;
   }
 
-  .times {
-    height: 55px;
-    line-height: 55px;
-  }
-
   .title {
     font-size: calc(21px + 1.875vw);
   }
 
   .desc {
-    font-size: calc(13px + 0.5208333333vw);
+    font-size: calc(14px + 0.5208333333vw);
   }
 
   .circle-block {
