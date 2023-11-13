@@ -710,9 +710,9 @@ input:-webkit-autofill:active {
   z-index: 10;
   -webkit-box-shadow: 0 5px 28px #212529;
           box-shadow: 0 5px 28px #212529;
-  -webkit-transition: top 4.4s;
-  -o-transition: top 4.4s;
-  transition: top 4.4s;
+  -webkit-transition: top 12.4s;
+  -o-transition: top 12.4s;
+  transition: top 12.4s;
 }
 
 #third-section .section-img.img-scroll {
