@@ -281,6 +281,12 @@ input:-webkit-autofill:active {
   position: relative;
 }
 
+.offcanvas-body input,
+.offcanvas-body textarea {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .offcanvas-body .nav-link {
   font-family: Wadik, sans-serif;
   font-size: 1.555rem;
@@ -1121,6 +1127,12 @@ input:-webkit-autofill:active {
 
   .running-line {
     margin-top: -40px;
+  }
+
+  .offcanvas-body input,
+  .offcanvas-body textarea {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
