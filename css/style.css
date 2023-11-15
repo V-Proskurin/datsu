@@ -1139,7 +1139,7 @@ input:-webkit-autofill:active {
   }
 
   #fifth-section .circle-block {
-    top: -220px;
+    top: -209px;
     padding-bottom: 1.6rem;
   }
 
@@ -1207,7 +1207,7 @@ input:-webkit-autofill:active {
   }
 
   #fifth-section .circle-block {
-    top: -218px;
+    top: -205px;
   }
 
   #fifth-section .circle-block span {
@@ -1309,6 +1309,10 @@ input:-webkit-autofill:active {
   .slider {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .title-left {
+    top: 70px;
   }
 
   #first-section {
