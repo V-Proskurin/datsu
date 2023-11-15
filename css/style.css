@@ -1569,11 +1569,11 @@ input:-webkit-autofill:active {
   }
 
   .title-right {
-    top: calc(100vh - 22rem);
+    top: calc(100vh - 25rem);
   }
 
   .main {
-    height: calc(100vh - 15.2rem);
+    height: calc(100vh - 17.2rem);
   }
 
   .main-fonVidio {
