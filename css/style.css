@@ -272,7 +272,7 @@ input:-webkit-autofill:active {
   display: inline-block;
   position: absolute;
   right: -183px;
-  bottom: -484px;
+  bottom: -496px;
   width: 632px;
   border: 1px solid white;
   border-radius: 100%;
@@ -864,7 +864,7 @@ input:-webkit-autofill:active {
 }
 
 #fourth-section .slider .swiper {
-  height: 411px;
+  height: 409px;
   max-height: 100%;
   min-height: 100%;
 }
