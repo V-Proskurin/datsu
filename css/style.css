@@ -305,7 +305,7 @@ input:-webkit-autofill:active {
 .offcanvas-body .nav-link:hover::before {
   content: "";
   display: inline-block;
-  margin-right: 2em;
+  margin-right: 1em;
   width: 46px;
   height: 1px;
   vertical-align: middle;
